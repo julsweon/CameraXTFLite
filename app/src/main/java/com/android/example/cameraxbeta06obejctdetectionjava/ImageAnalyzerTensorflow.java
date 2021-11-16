@@ -88,7 +88,9 @@ public class ImageAnalyzerTensorflow extends AppCompatActivity {
    public void analyzeImage(ImageProxy imageProxy) {
 
         if (isQuant) {
+            //assetModelName = "coco_ssd_mobilenet_v1_1.0_quant.tflite";
             assetModelName = "coco_ssd_mobilenet_v1_1.0_quant.tflite";
+            //assetModelName = "v3_label_model.tflite";
             assetLabelName = "coco_ssd_mobilenet_v1_1.0_quant.txt";
             imgData = ByteBuffer.allocateDirect(DIM_IMG_SIZE * DIM_IMG_SIZE * DIM_PIXEL_SIZE);
         } else {
